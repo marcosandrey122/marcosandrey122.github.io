@@ -18,9 +18,6 @@ export const logIn = async(email, senha) => {
     }).catch((error) => {
         erro = error;
     });
-    console.log("ok")
-    console.log(token)
-    console.log(erro)
     return {
         token: token,
         erro: erro
