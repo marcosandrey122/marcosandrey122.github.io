@@ -1,7 +1,7 @@
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent } from 'react-pro-sidebar';
 import { DiTerminal } from 'react-icons/di';
 import { BsFileBarGraphFill } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import "../styles/App.scss";
 
 export const Sidebar = (props) => {
@@ -15,7 +15,6 @@ export const Sidebar = (props) => {
             <SidebarContent>
                 <Menu iconShape="square">
                     <MenuItem icon={<BsFileBarGraphFill />}>Dashboard
-                        <Link to="view" />
                     </MenuItem>
                     <SubMenu title="Relatórios" icon={<DiTerminal />}>
                         <MenuItem>Semanal</MenuItem>

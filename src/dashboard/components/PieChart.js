@@ -24,7 +24,9 @@ export const PieChart = (props) => {
               value: {
                 show: true,
                 formatter: function (val){
-                  return  `${val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}` 
+                  let value = `${val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`.split('.') 
+                  let lista = value.split(',')
+                  return `${lista[0].replaceAll(".",",")}.${lista[1]}`
                 }
               },
               total: {

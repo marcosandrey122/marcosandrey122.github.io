@@ -15,7 +15,7 @@ export const LineChart = (props) => {
       datasets: [
         {
           type: 'line' ,
-          label: 'Lucro',
+          label: 'Saldo',
           borderColor: 'rgb(255, 99, 132)',
           borderWidth: 2,
           fill: false,
@@ -23,7 +23,7 @@ export const LineChart = (props) => {
         },
         {
           type: 'bar',
-          label: 'Entrada',
+          label: 'Entradas',
           backgroundColor: 'rgb(75, 192, 192)',
           data: props.bar1,
           borderColor: 'white',
@@ -31,7 +31,7 @@ export const LineChart = (props) => {
         },
         {
           type: 'bar',
-          label: 'Saída',
+          label: 'Saídas',
           backgroundColor: 'rgb(53, 162, 235)',
           data: props.bar2,
         },
