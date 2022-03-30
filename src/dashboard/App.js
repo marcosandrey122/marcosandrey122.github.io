@@ -46,10 +46,10 @@ export const Dashboard = (props) => {
             <div style={{backgroundColor: "#0b1e35"}}>
                 <Container fluid>
                     <Row>
-                        <Col md={2}>
+                        <Col md={1}>
                             <Sidebar empresa={drop.empresa}/>
                         </Col>
-                        <Col md={10}>
+                        <Col md={11}>
                             <Header name={"DashBoard"}/>
                             <Container fluid style={{backgroundColor: "white"}}>
                                 <Row>
